@@ -1,0 +1,30 @@
+.wrapper {
+    margin: auto;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mem-slider {
+    background-color: brown;
+}
+.mem-slider__container {
+    max-width: 1080px;
+}
+.mem-slider__image {
+}
+.mem-slider__footer {
+}
+.mem-slider__caption {
+}
+.mem-slider__text {
+}
+.mem-slider__control {
+}
+.control {
+}
+.control__list {
+}
+.control__item {
+}
