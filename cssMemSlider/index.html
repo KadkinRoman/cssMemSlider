@@ -12,14 +12,13 @@
 <body>
     <div class="wrapper">
         <div class="mem-slider">
+            <input type="radio" name="radio" id="one" checked />
+            <input type="radio" name="radio" id="two" />
+            <input type="radio" name="radio" id="three" />
+            <input type="radio" name="radio" id="four" />
 
             <div class="images__outer">
                 <div class="mem-slider__images">
-                    <input type="radio" name="radio" id="one" checked />
-                    <input type="radio" name="radio" id="two" />
-                    <input type="radio" name="radio" id="three" />
-                    <input type="radio" name="radio" id="four" />
-                    
                     <div class="mem-slider__image mem-slider__image--first">
                         <img src="images/mem1.jpg" alt="mem" />
                     </div>
@@ -36,22 +35,28 @@
             </div>
 
             <div class="mem-slider__footer">
-                <div class="mem-slider__caption">
-                    <p class="mem-slider__text mem-slider__text--first">Text1</p>
-                    <p class="mem-slider__text">
-                        Интерфейс интуитивно понятен. Пользователям не нужна помощь в освоении
-                    </p>
-                    <p class="mem-slider__text">Text3</p>
-                    <p class="mem-slider__text">Text4</p>
+
+                <div class="caption__outer">
+                    <div class="mem-slider__caption">
+                        <p class="mem-slider__text mem-slider__text--first">Уже сто раз запустил.</p>
+                        <p class="mem-slider__text">
+                            Интерфейс интуитивно понятен. Пользователям не нужна помощь в освоении.
+                        </p>
+                        <p class="mem-slider__text">Когда тимлид помогает</p>
+                        <p class="mem-slider__text">Задавай вопросы к своему коду!!!</p>
+                    </div>
+                </div>
+
+
+
+                <div class="mem-slider__buttons">
+                    <label for="one" class="button"></label>
+                    <label for="two" class="button"></label>
+                    <label for="three" class="button"></label>
+                    <label for="four" class="button"></label>
                 </div>
             </div>
 
-            <div class="mem-slider__buttons">
-                <label for="one" class="button button--active"></label>
-                <label for="two" class="button"></label>
-                <label for="three" class="button"></label>
-                <label for="four" class="button"></label>
-            </div>
 
         </div>
 </body>
