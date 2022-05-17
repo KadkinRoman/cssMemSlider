@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: .6em;
+}
+
+body {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.wrapper {
+    background-color: rgb(46, 49, 49);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+.mem-slider {
+    max-width: 70rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+/*Images*****************************/
+
+.mem-slider__images {
+    width: 400%;
+    display: flex;
+}
+
+.mem-slider__image {
+    padding: 5rem;
+    width: 25%;
+    transition: all 0.6s ease;
+}
+
+.mem-slider__image img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer**************************************/
+
+.mem-slider__footer {
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    max-height: 40rem;
+}
+
+.caption__outer {
+    overflow: hidden;
+}
+
+.mem-slider__caption {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+
+.mem-slider__text {
+    width: 25%;
+    transition: all 0.6s ease;
+}
+
+@media (max-width: 47.95rem) {
+    .mem-slider__footer {
+        flex-direction: column-reverse;
+    }
+}
+
+/*Buttons**************************/
+.mem-slider__buttons {
+    display: flex;
+}
+
+.button__outer {
+    margin-top: -1.1rem;
+    height: 5rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button__outer:hover .button{
+    background-color: rgb(255, 255, 255);
+    border: .1rem solid rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+
+.button {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    background-color: rgb(9, 5, 248);
+    border: .3rem solid rgb(9, 5, 248);
+    border-radius: 1rem;
+    transition: all .3s ease;
+}
+
+@media (max-width: 47.95rem) {
+    .mem-slider__buttons {
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+}
+
+/*Checked images*******************************/
+
+#one:checked ~ .mem-slider__images .mem-slider__image--first {
+    margin-left: 0;
+}
+
+#two:checked ~ .mem-slider__images .mem-slider__image--first {
+    margin-left: -25%;
+}
+
+#three:checked ~ .mem-slider__images .mem-slider__image--first {
+    margin-left: -50%;
+}
+
+#four:checked ~ .mem-slider__images .mem-slider__image--first {
+    margin-left: -75%;
+}
+/*Checked text*******************************/
+
+#one:checked ~ .mem-slider__footer .caption__outer .mem-slider__caption .mem-slider__text--first {
+    margin-left: 0;
+}
+
+#two:checked ~ .mem-slider__footer .caption__outer .mem-slider__caption .mem-slider__text--first {
+    margin-left: -25%;
+}
+
+#three:checked ~ .mem-slider__footer .caption__outer .mem-slider__caption .mem-slider__text--first {
+    margin-left: -50%;
+}
+
+#four:checked ~ .mem-slider__footer .caption__outer .mem-slider__caption .mem-slider__text--first {
+    margin-left: -75%;
+}
+
+/*Checked button*******************************/
+#one:checked ~ .mem-slider__footer .mem-slider__buttons .button__outer:nth-child(1) .button,
+#two:checked ~ .mem-slider__footer .mem-slider__buttons .button__outer:nth-child(2) .button,
+#three:checked ~ .mem-slider__footer .mem-slider__buttons .button__outer:nth-child(3) .button,
+#four:checked ~ .mem-slider__footer .mem-slider__buttons .button__outer:nth-child(4) .button {
+    background-color: transparent;
+}
