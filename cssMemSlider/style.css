@@ -76,7 +76,7 @@ input {
     transition: all 0.6s ease;
 }
 
-@media (max-width: 77rem) {
+@media (max-width: 47.95rem) {
     .mem-slider__footer {
         flex-direction: column-reverse;
     }
@@ -113,7 +113,7 @@ input {
     transition: all .3s ease;
 }
 
-@media (max-width: 76.7rem) {
+@media (max-width: 47.95rem) {
     .mem-slider__buttons {
         align-self: center;
         margin-bottom: 2rem;
